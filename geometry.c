@@ -72,6 +72,6 @@ void coord_2d_midpoint(coord_2d_t* mid, const coord_2d_t* a, const coord_2d_t* b
 
 double coord_2d_area_triangle(const coord_2d_t* a, const coord_2d_t* b, const coord_2d_t* c){
 
-return ((a->x*(B->y - C->y)) + (B->x*(C->y - A->y)) + (C->x*(A->y - B->y)))/2;
-
+double area = ((a->x*(B->y - C->y)) + (B->x*(C->y - A->y)) + (C->x*(A->y - B->y)))/2;
+return area;
 }
